@@ -8,15 +8,19 @@ float_array = price_array.map { |value| value.to_f }
 
 combined_hash = currency_array.zip(float_array).to_h
 
+
 puts "La ou les plus grosses valeurs de crypto :"
-max_values = combined_hash.sort_by { |key, value| value }.reverse
-if max_values > 100.00
+max_values = combined_hash.sort_by { |key, value| value }.reverse.to_h
 puts max_values
-end
+
 
 puts "La ou les plus petites valeurs de crypto :"
 min_values = combined_hash.sort_by { |key, value| value }.to_h
 puts min_values
+
+puts "Les devises dont le cours est inférieur à 6000 :"
+
+puts "La devise la plus chère parmi celles dont le cours est inférieur à 6000 :"
 
 
 
