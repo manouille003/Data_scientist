@@ -12,11 +12,15 @@ combined_hash = currency_array.zip(float_array).to_h
 puts "La ou les plus grosses valeurs de crypto :"
 max_values = combined_hash.sort_by { |key, value| value }.reverse.to_h
 puts max_values
+puts ["Project-X"] ["42-coin"] ["bitBTC"]
 
 
 puts "La ou les plus petites valeurs de crypto :"
 min_values = combined_hash.sort_by { |key, value| value }.to_h
-puts min_values
+puts = min_values
+puts ["Sprouts"] ["EmberCoin"] ["StrongHands"]
+
+
 
 puts "Les devises dont le cours est inférieur à 6000 :"
 
